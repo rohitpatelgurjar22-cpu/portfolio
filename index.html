@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Patel — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav__brand">RP<span class="nav__brand-dot">.</span></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#home" class="nav__link active" data-nav>Home</a>
+    <a href="#about" class="nav__link" data-nav>About</a>
+    <a href="#skills" class="nav__link" data-nav>Skills</a>
+    <a href="#projects" class="nav__link" data-nav>Projects</a>
+    <a href="#training" class="nav__link" data-nav>Training</a>
+    <a href="#contact" class="nav__link" data-nav>Contact</a>
+  </nav>
+  <a href="mailto:rohitpatelgurjar22@gmail.com" class="nav__cta">Say hello</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero__signal" aria-hidden="true">
+    <span class="dot dot--red"></span>
+    <span class="dot dot--amber"></span>
+    <span class="dot dot--green is-live"></span>
+    <span class="hero__signal-label">STATUS: OPEN TO WORK</span>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">Software Developer · MCA Student</p>
+      <h1 class="hero__title">
+        Rohit <span class="hero__title-outline">Patel</span>
+      </h1>
+      <p class="hero__desc">
+        Aspiring software developer pursuing an MCA, building responsive,
+        user-friendly digital products at the intersection of
+        <span class="hl">web development</span> and <span class="hl">data analysis</span>.
+        I turn messy problems — traffic congestion, fund performance, cluttered
+        dashboards — into clear, working systems.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <span class="mono">Bhopal, India</span>
+          <span class="hero__meta-label">Based in</span>
+        </div>
+        <div class="hero__meta-item">
+          <span class="mono">2025 — Present</span>
+          <span class="hero__meta-label">MCA · IIIT Bhopal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__portrait" id="portrait">
+      <div class="portrait__frame">
+        <img src="profile.png" alt="Portrait of Rohit Patel" class="portrait__img" id="portraitImg"
+             onerror="this.parentElement.classList.add('portrait--fallback')">
+        <div class="portrait__fallback">
+          <span>RP</span>
+        </div>
+      </div>
+      <div class="portrait__ring" aria-hidden="true"></div>
+      <div class="portrait__tag">
+        <span class="mono">MCA · 2025–28</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to about">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="section__head">
+    <p class="eyebrow">About</p>
+    <h2 class="section__title">Objective &amp; education</h2>
+  </div>
+
+  <div class="about__grid">
+    <p class="about__lead">
+      I'm currently pursuing my <strong>Master of Computer Applications</strong>,
+      building on a strong foundation in programming, web development and
+      data analysis. I care about crafting responsive, user-friendly digital
+      solutions — and I'm continuously sharpening both technical and
+      problem-solving skills in a growth-oriented environment.
+    </p>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__signal"><span class="dot dot--green is-live"></span></div>
+        <div class="timeline__body">
+          <p class="timeline__role">Master of Computer Applications (MCA)</p>
+          <p class="timeline__org">Indian Institute of Information Technology, Bhopal</p>
+          <p class="timeline__time mono">2025 — Present</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__signal"><span class="dot dot--amber"></span></div>
+        <div class="timeline__body">
+          <p class="timeline__role">Bachelor of Computer Applications (BCA)</p>
+          <p class="timeline__org">Maharaja Ranjit Singh College of Professional Sciences, Indore</p>
+          <p class="timeline__time mono">Completed 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section section--alt" id="skills">
+  <div class="section__head">
+    <p class="eyebrow">Capabilities</p>
+    <h2 class="section__title">Skills &amp; tools</h2>
+  </div>
+
+  <div class="skills__grid" id="skillsGrid">
+
+    <div class="skill-card">
+      <p class="skill-card__label mono">Programming</p>
+      <ul class="skill-list">
+        <li><span>C</span><span class="bar"><span class="bar__fill" data-level="80"></span></span></li>
+        <li><span>C++</span><span class="bar"><span class="bar__fill" data-level="78"></span></span></li>
+        <li><span>Python <em>(learning)</em></span><span class="bar"><span class="bar__fill" data-level="50"></span></span></li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label mono">Web development</p>
+      <ul class="skill-list">
+        <li><span>HTML</span><span class="bar"><span class="bar__fill" data-level="90"></span></span></li>
+        <li><span>CSS</span><span class="bar"><span class="bar__fill" data-level="85"></span></span></li>
+        <li><span>JavaScript</span><span class="bar"><span class="bar__fill" data-level="78"></span></span></li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label mono">UI / UX design</p>
+      <ul class="skill-list">
+        <li><span>Wireframing</span><span class="bar"><span class="bar__fill" data-level="75"></span></span></li>
+        <li><span>Prototyping</span><span class="bar"><span class="bar__fill" data-level="72"></span></span></li>
+        <li><span>Responsive design</span><span class="bar"><span class="bar__fill" data-level="85"></span></span></li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label mono">Tools</p>
+      <div class="chip-row">
+        <span class="chip">Power BI</span>
+        <span class="chip">Git</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">Figma</span>
+        <span class="chip">MySQL</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label mono">Core strengths</p>
+      <div class="chip-row">
+        <span class="chip">Problem solving</span>
+        <span class="chip">Logical thinking</span>
+        <span class="chip">Data analysis</span>
+        <span class="chip">Databases</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__label mono">Soft skills</p>
+      <div class="chip-row">
+        <span class="chip">Communication</span>
+        <span class="chip">Analysis</span>
+        <span class="chip">Collaboration</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="section__head">
+    <p class="eyebrow">Selected work</p>
+    <h2 class="section__title">Projects</h2>
+  </div>
+
+  <article class="project project--featured">
+    <div class="project__signal" aria-hidden="true">
+      <span class="dot dot--red is-live"></span>
+      <span class="dot dot--amber"></span>
+      <span class="dot dot--green"></span>
+    </div>
+    <div class="project__content">
+      <p class="project__eyebrow mono">Featured · India Innovates 2026</p>
+      <h3 class="project__title">AI-Driven Traffic Control System for Emergency Vehicles</h3>
+      <p class="project__desc">
+        A civic-tech system that replaces fixed-interval traffic lights with
+        live, camera-driven decisions — and clears a path the instant an
+        ambulance or fire truck approaches.
+      </p>
+      <ul class="project__points">
+        <li><strong>AI density detection</strong> — computer vision reads live traffic and adjusts signal timers dynamically.</li>
+        <li><strong>Emergency green corridor</strong> — automatically detects approaching emergency vehicles and clears their path in real time.</li>
+        <li><strong>National recognition</strong> — showcased at India Innovates 2026 as a smart-city civic-tech solution.</li>
+      </ul>
+      <div class="chip-row">
+        <span class="chip chip--outline">Computer Vision</span>
+        <span class="chip chip--outline">Real-time Systems</span>
+        <span class="chip chip--outline">Civic Tech</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="project__content">
+      <p class="project__eyebrow mono">Data analysis · Python · Tableau</p>
+      <h3 class="project__title">Mutual Fund Analyst Dashboard</h3>
+      <p class="project__desc">
+        An interactive dashboard for exploring fund performance and
+        investment trends, built to turn raw financial data into decisions.
+      </p>
+      <ul class="project__points">
+        <li>Built with <strong>Python (Pandas, NumPy)</strong> and <strong>Tableau</strong> to analyze fund performance and trends.</li>
+        <li>Cleaned and processed financial data, visualizing <strong>NAV, AUM, expense ratio, returns and risk</strong>.</li>
+        <li>Used <strong>Git &amp; GitHub</strong> for version control and project management.</li>
+      </ul>
+      <div class="chip-row">
+        <span class="chip chip--outline">Python</span>
+        <span class="chip chip--outline">Pandas</span>
+        <span class="chip chip--outline">Tableau</span>
+        <span class="chip chip--outline">Git</span>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ===== TRAINING ===== -->
+<section class="section section--alt" id="training">
+  <div class="section__head">
+    <p class="eyebrow">Track record</p>
+    <h2 class="section__title">Training &amp; certifications</h2>
+  </div>
+
+  <div class="training__grid">
+    <div class="training-card">
+      <p class="training-card__org mono">BlueStocks.in</p>
+      <p class="training-card__role">Data Analyst Intern</p>
+      <p class="training-card__time">3 months</p>
+    </div>
+    <div class="training-card">
+      <p class="training-card__org mono">Flinkt Technology</p>
+      <p class="training-card__role">Web Development Training Program</p>
+    </div>
+    <div class="training-card">
+      <p class="training-card__org mono">India Innovates 2026</p>
+      <p class="training-card__role">Participation Certificate</p>
+    </div>
+    <div class="training-card">
+      <p class="training-card__org mono">Universal Infomates, Indore</p>
+      <p class="training-card__role">Python Course Completion Certificate</p>
+      <p class="training-card__time">2023</p>
+    </div>
+  </div>
+
+  <div class="strengths">
+    <p class="eyebrow">Strengths</p>
+    <ul class="strengths__list">
+      <li>Quick learner with strong analytical skills</li>
+      <li>Good team collaboration ability</li>
+      <li>Passionate about continuous learning and improvement</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section contact" id="contact">
+  <div class="section__head">
+    <p class="eyebrow">Get in touch</p>
+    <h2 class="section__title">Let's build something.</h2>
+  </div>
+
+  <div class="contact__grid">
+    <p class="contact__lead">
+      Open to internships and junior developer roles. The fastest way to
+      reach me is email — I usually reply within a day.
+    </p>
+    <div class="contact__links">
+      <a href="mailto:rohitpatelgurjar22@gmail.com" class="contact__link">
+        <span class="contact__link-label mono">Email</span>
+        <span class="contact__link-value">rohitpatelgurjar22@gmail.com</span>
+      </a>
+      <a href="tel:+917828831374" class="contact__link">
+        <span class="contact__link-label mono">Phone</span>
+        <span class="contact__link-value">+91 78288 31374</span>
+      </a>
+      <a href="https://www.linkedin.com/in/rohitpatel7828" target="_blank" rel="noopener" class="contact__link">
+        <span class="contact__link-label mono">LinkedIn</span>
+        <span class="contact__link-value">linkedin.com/in/rohitpatel7828</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Rohit Patel. Built with HTML, CSS &amp; JavaScript.</p>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
